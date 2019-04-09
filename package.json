@@ -1,0 +1,22 @@
+{
+    "name": "themename",
+    "version": "1.0.0",
+    "description": "theme info",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Scott Kennedy",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^9.4.10",
+        "browser-sync": "^2.26.3",
+        "gulp": "^3.9.1",
+        "gulp-clean-css": "^4.0.0",
+        "gulp-postcss": "^7.0.0",
+        "gulp-purgecss": "^1.1.1",
+        "gulp-sass": "^4.0.2",
+        "node-sass": "^4.11.0",
+        "purgecss-with-wordpress": "^1.0.0",
+        "tailwindcss": "^0.7.4"
+    }
+}

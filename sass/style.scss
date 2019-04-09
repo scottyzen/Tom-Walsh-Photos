@@ -1,0 +1,110 @@
+/*
+Theme Name: Tom Walsh Photography
+Theme URI: https://github.com/scottyzen/tomwalshphotography
+Author: Scott Kennedy
+Author URI: http://scottyzen.com
+Description: Info about theme
+Version: 2019
+Tags: colorfull
+Text Domain: Tom Walsh Photography
+*/
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+body {
+    font-weight: 300;
+    // background: #323340;
+    background-image: linear-gradient(#32333F, #3b4250);
+}
+
+@tailwind preflight;
+@tailwind components;
+
+
+@import "core/mixins";
+@import "core/variables";
+@import "core/animations";
+@import "core/helpers";
+
+
+@import "components/header";
+@import "components/gallery";
+@import "components/album";
+@import "components/footer";
+
+@tailwind utilities;
+
+main {
+    background: #f8f8f8;
+    transform: translateY(-200px);
+    margin-bottom: 40px;
+
+    p {
+        line-height: 1.25;
+    }
+}
+
+.instafeed {
+    display: flex;
+    z-index: 100;
+    margin-bottom: 10px;
+    transform: translateY(60px);
+
+    a {
+        width: 16rem;
+        display: none;
+        z-index: 100;
+
+        &:nth-child(-n+2) {
+            display: flex;
+        }
+
+        @include mobile {
+            &:nth-child(-n+3) {
+                display: flex;
+            }
+        }
+
+        @include tablet {
+            &:nth-child(-n+5) {
+                display: flex;
+            }
+        }
+
+        @include laptop {
+            &:nth-child(-n+6) {
+                display: flex;
+            }
+        }
+
+        @include desktop {
+            &:nth-child(-n+8) {
+                display: flex;
+            }
+        }
+
+        @include ultra-wide {
+            &:nth-child(-n+12) {
+                display: flex;
+            }
+        }
+
+        img {
+            height: 160px;
+            width: 100%;
+            object-position: center;
+            object-fit: cover;
+
+        }
+    }
+}
