@@ -8742,6 +8742,10 @@ main p {
      object-fit: cover;
 }
 
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
