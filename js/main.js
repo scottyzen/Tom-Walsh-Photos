@@ -1,4 +1,4 @@
-const hashtag = 'tomwalshphotos';
+const hashtag = 'graiguenamanagh';
 const imagesToShow = 12;
 const instafeed = document.querySelector('.instafeed');
 

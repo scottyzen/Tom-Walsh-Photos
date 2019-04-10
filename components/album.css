@@ -7,7 +7,7 @@
 
 .envira-gallery-item {
   padding-bottom: 0 !important;
-  margin-top: 50px !important;
+  margin-bottom: 25px !important;
   transition: all 500ms !important;
   -webkit-transform-origin: bottom !important;
           transform-origin: bottom !important;
@@ -21,7 +21,7 @@
 
 .envira-gallery-item img {
   border: 10px solid #fff !important;
-  box-shadow: 0 12px 18px -5px rgba(11, 13, 19, .25) !important;
+  box-shadow: 0 2px 3px -1px rgba(0, 0, 0, .25) !important;
   -webkit-filter: grayscale(25%);
           filter: grayscale(25%);
 }
@@ -29,7 +29,7 @@
 .envira-gallery-item img:hover {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
-  border: 10px solid #eea65e !important;
+  border-color: #eea65e !important;
 }
 
 .envira-lazy {

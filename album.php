@@ -14,8 +14,8 @@
 </header>
 
 <div class="container">
-    <main class="leading-tight shadow -mt-56">
-        <div class="my-color mt-32 md:pt-16 md:px-20 pb-32 flex flex-wrap">
+    <main class="leading-tight shadow -mt-32 md:-mt-56">
+        <div class="my-color mt-32 pt-8 px-4 md:pt-16 md:px-12 pb-32 flex flex-wrap">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>
             <?php endwhile; endif; ?>

@@ -26,7 +26,7 @@
                         </div>
 
                         <!-- Pages -->
-                        <div class="w-full mt-16 md:w-auto md:ml-16">
+                        <div class="w-1/2 mt-16 md:w-auto md:ml-16">
                             <div class="title inline-block pr-12">Pages</div>
                             <ul>
                                 
@@ -45,7 +45,7 @@
                         </div>
 
                         <!-- ALBUMS -->
-                        <div class="w-full mt-16 md:w-auto md:ml-16">
+                        <div class="w-1/2 mt-16 md:w-auto md:ml-16">
                             <div class="title inline-block pr-12">Albums</div>
                             <ul>
                                 <li><a href="photos/autumn-colours/">Autumn colours</a></li>

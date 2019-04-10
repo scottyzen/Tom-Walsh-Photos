@@ -36,7 +36,7 @@
                             $my_menu = array( 'menu' => 'main-menu', 'container' => '', 'items_wrap' => '%3$s' );
                             wp_nav_menu( $my_menu );
                         ?>
-                        <li class="mr-1 ml-4 hidden sm:block" style="margin-top: -3px">
+                        <li class="mr-1 ml-8 hidden sm:block" style="margin-top: -3px">
                             <a href="https://www.instagram.com/tomwalshphotos/" target=”_blank”>
                                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
                                 width="24" height="24"

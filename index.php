@@ -39,8 +39,8 @@
         <p class="max-w-sm m-auto mb-8 ">All photos are available for print. </p>
         <?php if ( function_exists( 'envira_gallery' ) ) { envira_gallery( '97' ); } ?>
         <div class="text-center w-full my-12">
-            <p class="text-lg">Like what you see? Check out my <a href="<?php echo get_site_url() ?>/gallery"
-            class="font-semibold font-medium py-1 mx-1 text-orange border-b-2 border-orange">Full Gallery</a> for more.
+            <p class="text-lg px-8">Like what you see? Check out my <a href="<?php echo get_site_url() ?>/gallery"
+            class="font-medium pb-1 text-orange border-b-2 border-orange">Full Gallery</a> for more.
             </p>
         </div>
     </div>
