@@ -45,8 +45,16 @@ body {
 
 main {
     background: #f8f8f8;
-    transform: translateY(-200px);
     margin-bottom: 40px;
+    transform: translateY(-200px);
+
+    @include laptop {
+        transform: translateY(-300px);
+    }
+
+    @include desktop {
+        transform: translateY(-350px);
+    }
 
     p {
         line-height: 1.25;

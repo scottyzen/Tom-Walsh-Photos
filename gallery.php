@@ -9,7 +9,7 @@
 </header>
 
 <div class="container">
-    <main class="leading-tight shadow -mt-56">
+    <main class="leading-tight shadow -mt-32">
         <div class="my-color p-8 mt-32 md:pt-20 md:px-20 pb-32 flex flex-wrap">
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <?php the_content(); ?>

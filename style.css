@@ -604,13 +604,13 @@ table {
   bottom: 0;
   left: 0;
   background: inherit;
-  box-shadow: inset 0 0 2000px #4f5250;
+  box-shadow: inset 0 0 1000px 40px #2f3341;
   -webkit-filter: blur(20px);
           filter: blur(20px);
   margin: -40px;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 576px) {
   .frosted-glass::before {
     background-size: 180%;
   }
@@ -644,7 +644,7 @@ blockquote {
   position: relative;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 576px) {
   .header {
     background-size: cover;
     min-height: 100vh;
@@ -658,7 +658,7 @@ blockquote {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
   .header {
     background-size: cover;
     min-height: 125vh;
@@ -684,7 +684,7 @@ ul#main-menu .menu-item a {
 }
 
 ul#main-menu .current-menu-item {
-  border-bottom: 3px solid #fff;
+  border-bottom: 3px solid #dc9450;
 }
 
 #albums {
@@ -701,7 +701,7 @@ ul#main-menu .current-menu-item {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
   #albums {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -8662,9 +8662,23 @@ footer a:hover {
 
 main {
   background: #f8f8f8;
+  margin-bottom: 40px;
   -webkit-transform: translateY(-200px);
           transform: translateY(-200px);
-  margin-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  main {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
+  }
+}
+
+@media (min-width: 1280px) {
+  main {
+    -webkit-transform: translateY(-350px);
+            transform: translateY(-350px);
+  }
 }
 
 main p {
@@ -8689,7 +8703,7 @@ main p {
   display: flex;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 576px) {
   .instafeed a:nth-child(-n+3) {
     display: flex;
   }
@@ -8701,13 +8715,13 @@ main p {
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
   .instafeed a:nth-child(-n+6) {
     display: flex;
   }
 }
 
-@media (min-width: 1281px) {
+@media (min-width: 1280px) {
   .instafeed a:nth-child(-n+8) {
     display: flex;
   }
