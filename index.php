@@ -4,7 +4,7 @@
     <!-- Text -->
     <div class="container text-center md:text-left mt-16 md:mt-32 lg:mt-42">
         <h1 class="text-5xl sm:text-6xl md:text-7xl text-grey-lightest font-serif pt-10 text-shadow">Tom Walsh</h1>
-        <p class="text-3xl px-4 mt-2 sm:text-4xl md:px-0 md:pr-12 text-grey-lighter text-shadow-orange inline-block border-t-2 pt-2 font-medium">Photography</p>
+        <p class="text-3xl px-4 mt-2 sm:text-3xl md:px-0 md:pr-12  text-grey-lighter text-shadow-orange inline-block border-t-2 pt-2 border-orange">Photography</p>
     </div>
 
 </header>
@@ -16,7 +16,7 @@
         
         <!-- About text -->
         <div class="w-full lg:w-1/2 p-8 md:px-16 my-4 md:my-12 mb-20">
-             <div class="text-4xl md:text-5xl font-serif border-b-2 border-orange inline-block">
+             <div class="text-4xl md:text-5xl font-serif border-b-2 border-orange inline-block text-black">
                     <?php single_post_title(); ?>
                 </div>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

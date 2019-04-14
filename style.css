@@ -8667,17 +8667,31 @@ main {
           transform: translateY(-200px);
 }
 
+@media (min-width: 768px) {
+  main {
+    -webkit-transform: translateY(-150px);
+            transform: translateY(-150px);
+  }
+}
+
 @media (min-width: 992px) {
   main {
-    -webkit-transform: translateY(-300px);
-            transform: translateY(-300px);
+    -webkit-transform: translateY(-200px);
+            transform: translateY(-200px);
   }
 }
 
 @media (min-width: 1280px) {
   main {
-    -webkit-transform: translateY(-350px);
-            transform: translateY(-350px);
+    -webkit-transform: translateY(-250px);
+            transform: translateY(-250px);
+  }
+}
+
+@media (min-width: 1800px) {
+  main {
+    -webkit-transform: translateY(-300px);
+            transform: translateY(-300px);
   }
 }
 

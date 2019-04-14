@@ -48,12 +48,20 @@ main {
     margin-bottom: 40px;
     transform: translateY(-200px);
 
+    @include tablet {
+        transform: translateY(-150px);
+    }
+
     @include laptop {
-        transform: translateY(-300px);
+        transform: translateY(-200px);
     }
 
     @include desktop {
-        transform: translateY(-350px);
+        transform: translateY(-250px);
+    }
+
+    @include ultra-wide {
+        transform: translateY(-300px);
     }
 
     p {

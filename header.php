@@ -20,7 +20,6 @@
             echo get_template_directory_uri()."/images/bg.jpg" ?>
 <?php   } ?>')">
 
-
         <!-- Glass Menu -->
         <div class="frosted-glass">
             <div class="container flex justify-between items-center">
@@ -30,8 +29,7 @@
                     </a>
                 </div>  
 
-                <nav class="menu font-medium">
-                    
+                <nav class="menu font-medium">                  
                     <ul id="main-menu" class="justify-end">
                         <?php 
                             $my_menu = array( 'menu' => 'main-menu', 'container' => '', 'items_wrap' => '%3$s' );
