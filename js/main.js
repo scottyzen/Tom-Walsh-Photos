@@ -22,3 +22,15 @@ setTimeout(() => {
             }
         })
 }, 500);
+
+
+const header = document.querySelector('header');
+
+// Burger Button
+const burgerButton = document.querySelector('.hamburger');
+
+burgerButton.addEventListener('click', function () {
+    // Toggle active state
+    this.classList.toggle('is-active');
+    header.classList.toggle('show-mobile-nav');
+})

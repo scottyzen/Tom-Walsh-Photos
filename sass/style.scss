@@ -23,12 +23,11 @@ button {
 
 body {
     font-weight: 300;
-    background-image: linear-gradient(#32333F, #3b4250);
+    background: #272b30;
 }
 
 @tailwind preflight;
 @tailwind components;
-
 
 @import "core/mixins";
 @import "core/variables";
@@ -124,8 +123,7 @@ main {
     }
 }
 
-.font-serif {
-    font-family: 'Playfair Display',
-        serif;
-    // letter-spacing: 0.05rem;
-}
+// .font-serif {
+//     font-family: 'Playfair Display',
+//         serif;
+// }

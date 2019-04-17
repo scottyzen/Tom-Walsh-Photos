@@ -208,12 +208,12 @@ module.exports = {
             'sans-serif',
         ],
         'serif': [
-            'Constantia',
             'Lucida Bright',
             'Lucidabright',
             'Lucida Serif',
             'Lucida',
             'DejaVu Serif',
+            'Constantia',
             'Bitstream Vera Serif',
             'Liberation Serif',
             'Georgia',

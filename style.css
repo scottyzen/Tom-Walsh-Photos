@@ -23,7 +23,7 @@ button {
 
 body {
   font-weight: 300;
-  background-image: linear-gradient(#32333f, #3b4250);
+  background: #272b30;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -592,7 +592,7 @@ table {
   z-index: 1;
   overflow: hidden;
   box-sizing: border-box;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
 }
 
 .frosted-glass::before {
@@ -604,6 +604,7 @@ table {
   bottom: 0;
   left: 0;
   background: inherit;
+  background-position: top;
   box-shadow: inset 0 0 1000px 40px #2f3341;
   -webkit-filter: blur(20px);
           filter: blur(20px);
@@ -618,12 +619,8 @@ table {
 
 @media (min-width: 768px) {
   .frosted-glass::before {
-    background-size: cover;
+    background-size: 100%;
   }
-}
-
-.text-shadow-orange {
-  text-shadow: 0 1px 3px #332f3e;
 }
 
 .text-shadow {
@@ -640,28 +637,35 @@ blockquote {
   background-size: 275%;
   background-position: top center;
   background-repeat: no-repeat;
-  min-height: 90vh;
+  min-height: 35rem;
   position: relative;
 }
 
 @media (min-width: 576px) {
   .header {
     background-size: cover;
-    min-height: 100vh;
+    min-height: 35rem;
   }
 }
 
 @media (min-width: 768px) {
   .header {
     background-size: cover;
-    min-height: 100vh;
+    min-height: 45rem;
   }
 }
 
 @media (min-width: 992px) {
   .header {
     background-size: cover;
-    min-height: 125vh;
+    min-height: 55rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header {
+    background-size: cover;
+    min-height: 60rem;
   }
 }
 
@@ -685,6 +689,38 @@ ul#main-menu .menu-item a {
 
 ul#main-menu .current-menu-item {
   border-bottom: 3px solid #dc9450;
+}
+
+.burger {
+  padding: 1.5rem 0 1rem;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+  max-height: 0;
+}
+
+.mobile-nav ul {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  transition: all 300ms ease-in-out 200ms;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.mobile-nav ul li a {
+  color: #fff;
+}
+
+header.show-mobile-nav .mobile-nav {
+  max-height: 400px;
+}
+
+header.show-mobile-nav .mobile-nav ul {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  transition: all 300ms ease-in-out;
 }
 
 #albums {
@@ -3206,7 +3242,7 @@ footer a:hover {
 }
 
 .font-serif {
-  font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+  font-family: Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Constantia, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
 }
 
 .font-mono {
@@ -8756,10 +8792,6 @@ main p {
      object-fit: cover;
 }
 
-.font-serif {
-  font-family: 'Playfair Display', serif;
-}
-
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;
@@ -11139,7 +11171,7 @@ main p {
   }
 
   .sm\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Constantia, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .sm\:font-mono {
@@ -18957,7 +18989,7 @@ main p {
   }
 
   .md\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Constantia, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .md\:font-mono {
@@ -26775,7 +26807,7 @@ main p {
   }
 
   .lg\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Constantia, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .lg\:font-mono {
@@ -34593,7 +34625,7 @@ main p {
   }
 
   .xl\:font-serif {
-    font-family: Constantia, Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
+    font-family: Lucida Bright, Lucidabright, Lucida Serif, Lucida, DejaVu Serif, Constantia, Bitstream Vera Serif, Liberation Serif, Georgia, serif;
   }
 
   .xl\:font-mono {

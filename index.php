@@ -16,7 +16,7 @@
         
         <!-- About text -->
         <div class="w-full lg:w-1/2 p-8 md:px-16 my-4 md:my-12 mb-20">
-             <div class="text-4xl md:text-5xl font-serif border-b-2 border-orange inline-block text-black">
+             <div class="text-4xl md:text-5xl font-serif text-grey-darkest">
                     <?php single_post_title(); ?>
                 </div>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
