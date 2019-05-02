@@ -1,4 +1,4 @@
-/*
+/*!
 Theme Name: Tom Walsh Photography
 Theme URI: https://github.com/scottyzen/tomwalshphotography
 Author: Scott Kennedy
@@ -26,15 +26,17 @@ body {
     background: #272b30;
 }
 
+// Tailwind CSS
 @tailwind preflight;
 @tailwind components;
 
-@import "core/mixins";
+// Core
 @import "core/variables";
+@import "core/mixins";
 @import "core/animations";
 @import "core/helpers";
 
-
+// Components
 @import "components/header";
 @import "components/gallery";
 @import "components/album";
@@ -118,12 +120,6 @@ main {
             width: 100%;
             object-position: center;
             object-fit: cover;
-
         }
     }
 }
-
-// .font-serif {
-//     font-family: 'Playfair Display',
-//         serif;
-// }

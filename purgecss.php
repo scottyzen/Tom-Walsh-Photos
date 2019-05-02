@@ -1,1 +1,1 @@
-<div class="menu menu-item current-menu-item envira-gallery-wrap  envira-gallery-item"></div>
+<div class="menu menu-item current-menu-item envira-gallery-wrap is-active show-mobile-nav envira-gallery-item envira-lazy-load envira-lazy hamburger #albums"></div>

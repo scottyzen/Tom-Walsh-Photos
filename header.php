@@ -15,12 +15,11 @@
 
     <div class="wrapper text-black">
 
-        <header class="header flex flex-col" style="background-image: linear-gradient(rgba(0,0,0,0) 90%, #272b30 100%), url('
-        <?php
-        if (has_post_thumbnail()) {
-            echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0];
-        } else { ?>
-            <?php echo get_template_directory_uri() . "/images/bg.jpg" ?>
+        <header class="header flex flex-col" style="background-image: linear-gradient(rgba(0,0,0,0) 90%, #272b30 100%), url('<?php
+                                                                                                                                if (has_post_thumbnail()) {
+                                                                                                                                    echo wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full')[0];
+                                                                                                                                } else { ?>
+                    <?php echo get_template_directory_uri() . "/images/bg.jpg" ?>
         <?php } ?>')">
 
             <!-- Glass Menu -->

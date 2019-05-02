@@ -6,7 +6,7 @@
     <h1 class="text-6xl lg:text-8xl text-white font-serif pb-2 pt-10 text-shadow"><?php
                                                                                     $url  = $_SERVER["REQUEST_URI"];
                                                                                     $words = explode("/", $url);
-                                                                                    $word = ucfirst($words[3]);
+                                                                                    $word = ucfirst($words[2]);
                                                                                     echo preg_replace("/[\-_]/", " ", $word);
                                                                                     ?></h1>
 </div>

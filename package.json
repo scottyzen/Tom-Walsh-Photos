@@ -1,5 +1,5 @@
 {
-    "name": "themename",
+    "name": "tomwalshphotos",
     "version": "1.0.0",
     "description": "theme info",
     "scripts": {
@@ -8,14 +8,15 @@
     "author": "Scott Kennedy",
     "license": "ISC",
     "devDependencies": {
-        "autoprefixer": "^9.4.10",
-        "browser-sync": "^2.26.3",
+        "autoprefixer": "^9.5.1",
+        "browser-sync": "^2.26.5",
+        "del": "^4.1.1",
         "gulp": "^3.9.1",
-        "gulp-clean-css": "^4.0.0",
-        "gulp-postcss": "^7.0.0",
+        "gulp-clean-css": "^4.2.0",
+        "gulp-postcss": "^7.0.1",
         "gulp-purgecss": "^1.1.1",
         "gulp-sass": "^4.0.2",
-        "node-sass": "^4.11.0",
+        "node-sass": "^4.12.0",
         "purgecss-with-wordpress": "^1.0.0",
         "tailwindcss": "^0.7.4"
     }
