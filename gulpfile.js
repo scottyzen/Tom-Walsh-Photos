@@ -73,7 +73,7 @@ gulp.task('copy', function () {
         "!gulpfile.babel.js",
         "!package.json",
         "!package-lock.json",
-        "!sass{,/**}",
+        "!sass",
         "!tailwind.js",
         "!gulpfile.js"
     ]).pipe(gulp.dest(package.name));

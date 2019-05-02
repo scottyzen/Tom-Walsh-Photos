@@ -1,0 +1,116 @@
+.header {
+    // background-image: url("images/bg.jpg");
+    background-size: 275%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    min-height: 35rem;
+    position: relative;
+
+    @include mobile {
+        background-size: cover;
+        min-height: 35rem;
+    }
+
+    @include tablet {
+        background-size: cover;
+        min-height: 45rem;
+    }
+
+    @include laptop {
+        background-size: cover;
+        min-height: 55rem;
+    }
+
+    @include desktop {
+        background-size: cover;
+        min-height: 60rem;
+    }
+}
+
+
+ul#main-menu {
+    display: flex;
+
+    li {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .menu-item {
+        margin-left: 1.8rem;
+        text-align: center;
+
+        a {
+            color: #fff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4)
+        }
+    }
+
+    .current-menu-item {
+        border-bottom: 3px solid #DC9450;
+    }
+}
+
+.burger {
+    padding: 1.5rem 0 1rem;
+}
+
+.mobile-nav {
+    overflow: hidden;
+    transition: all 500ms ease-in-out;
+    max-height: 0;
+
+    ul {
+        transform: scaleY(0);
+        transition: all 300ms ease-in-out 200ms;
+        transform-origin: top;
+
+        li {
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+header.show-mobile-nav {
+    .mobile-nav {
+        max-height: 400px;
+
+        ul {
+            transform: scaleY(1);
+            transition: all 300ms ease-in-out;
+        }
+    }
+}
+
+.frosted-glass {
+    background: inherit;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
+}
+
+.frosted-glass::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    background-position: top;
+    box-shadow: inset 0 0 1000px 40px #2f3341;
+    filter: blur(20px);
+    margin: -40px;
+
+    @include mobile {
+        background-size: 180%;
+    }
+
+    @include tablet {
+        background-size: 100%;
+    }
+}
