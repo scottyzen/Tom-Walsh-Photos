@@ -7,10 +7,7 @@ const tailwindcss = require('tailwindcss');
 const sass = require('gulp-sass');
 const del = require('del');
 var package = require('./package.json');
-
-
 sass.compiler = require('node-sass');
-
 
 class TailwindExtractor {
     static extract(content) {
@@ -26,15 +23,15 @@ gulp.task('css', function () {
             tailwindcss('./tailwind.js'),
             require('autoprefixer'),
         ]))
-        .pipe(
-            purgecss({
-                content: ["*.php"],
-                extractors: [{
-                    extractor: TailwindExtractor,
-                    extensions: ["html", "php", "js", "sass", "scss", "css"]
-                }]
-            })
-        )
+        // .pipe(
+        //     purgecss({
+        //         content: ["*.php"],
+        //         extractors: [{
+        //             extractor: TailwindExtractor,
+        //             extensions: ["html", "php", "js", "sass", "scss", "css"]
+        //         }]
+        //     })
+        // )
         .pipe(cleanCSS())
         .pipe(gulp.dest('./'));
 });
@@ -49,11 +46,6 @@ gulp.task('browser-sync', function () {
         proxy: "http://localhost:8888/",
         notify: true
     });
-});
-
-// Default task to be run with `gulp`
-gulp.task('default', ['css', 'browser-sync'], function () {
-    gulp.watch('sass/**/*.scss', ['css']);
 });
 
 // Delete theme folder
@@ -82,4 +74,9 @@ gulp.task('copy', function () {
 // Build theme
 gulp.task('build', ['clean'], function () {
     gulp.start('copy');
+});
+
+// Default task to be run with `gulp`
+gulp.task('default', ['css', 'browser-sync'], function () {
+    gulp.watch('sass/**/*.scss', ['css']);
 });
